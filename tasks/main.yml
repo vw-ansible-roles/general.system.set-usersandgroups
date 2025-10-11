@@ -27,7 +27,7 @@
     shell: "{{ (item.shell | length > 0) | ternary(item.shell, omit) }}"
     generate_ssh_key: "{{ item.generate_ssh_key }}"
     ssh_key_file: "{{ (item.ssh_key_file | length > 0) | ternary(item.ssh_key_file, omit) }}"
-    ssh_key_passphrase: "{{ (item.ssh_key_passphrase | length > 0) | ternary(ssh_key_passphrase.uid, omit) }}"
+    ssh_key_passphrase: "{{ (item.ssh_key_passphrase | length > 0) | ternary(item.ssh_key_passphrase, omit) }}"
     ssh_key_type: "{{ (item.ssh_key_type | length > 0) | ternary(item.ssh_key_type, omit) }}"
     ssh_key_comment: "{{ item.name }}@{{ inventory_hostname }}"
     system: "{{ item.issystemaccount }}"

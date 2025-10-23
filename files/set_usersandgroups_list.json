@@ -42,7 +42,7 @@
   "groups":  [
     {
       "name": "users",
-      "gid": ""
+      "gid": "",
       "issystemgroup": "no"
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "name": "daemons",
-      "gid": ""
+      "gid": "",
       "issystemgroup": "yes"
     }
   ]
